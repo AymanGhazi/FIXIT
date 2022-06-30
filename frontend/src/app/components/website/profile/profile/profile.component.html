@@ -1,0 +1,155 @@
+<!-- Wrapper -->
+<div id="wrapper">
+  <!-- Header Container -->
+  <header id="header-container" class="fullwidth">
+    <app-navbar></app-navbar>
+  </header>
+  <div class="clearfix"></div>
+  <!-- Header Container / End -->
+
+  <!-- Titlebar
+  ================================================== -->
+  <div class="single-page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="single-page-header-inner">
+            <div class="left-side">
+              <div class="header-image">
+                <img src="assets/images/user-avatar-big-03.jpg" alt="" />
+              </div>
+              <div class="header-details">
+                <h3>
+                  {{ profileInfo.name }}
+                  <!-- <span>5 years experience in Electronics</span> -->
+                </h3>
+                <ul>
+                  <li>
+                    <app-rating [ratingItem]="profileInfo.rating"></app-rating>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="right-side">
+              <!-- Breadcrumbs -->
+              <nav id="breadcrumbs" class="white">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Browse Companies</a></li>
+                  <li>Acodia</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="background-image-container"
+      style="background-image: url('assets/images/single-company.jpg')"
+    ></div>
+  </div>
+
+  <!-- Page Content
+  ================================================== -->
+  <div class="container">
+    <div class="row">
+      <!-- Content -->
+      <div class="col-xl-8 col-lg-8 content-right-offset">
+        <div class="single-page-section">
+          <h3 class="margin-bottom-25">About</h3>
+          <p>{{ profileInfo.about }}</p>
+        </div>
+
+        <!-- gallaries -->
+        <div class="intro">
+          <h1>Responsive Image Gallery</h1>
+        </div>
+        <div class="gallery_container-all">
+          <div
+            class="gallery_container"
+            *ngFor="let gallary of gallaries"
+            (click)="openGallary(gallary.albumId)"
+          >
+            <img
+              [src]="gallary.photos[0].photoPath"
+              alt="Image description goes here"
+            />
+            <span class="gallery_title">userName</span>
+            <span class="gallery_text">{{ gallary.title }}</span>
+          </div>
+        </div>
+        <!-- endGallaries -->
+
+        <div class="clearfix"></div>
+        <!-- Boxed List -->
+        <div class="boxed-list margin-bottom-60">
+          <div class="boxed-list-headline">
+            <h3><i class="icon-material-outline-thumb-up"></i> Reviews</h3>
+          </div>
+          <ul class="boxed-list-ul">
+            <app-review-item
+              *ngFor="let reviewItem of reviews"
+              [reviewItem]="reviewItem"
+              class="boxed-list-ul"
+            >
+            </app-review-item>
+          </ul>
+          <app-pagination [pagination]="{ totalItems: 500 }"></app-pagination>
+
+          <div class="centered-button margin-top-35">
+            <button
+              (click)="openReviewModal()"
+              class="popup-with-zoom-anim button button-sliding-icon"
+            >
+              Leave a Review
+              <i class="icon-material-outline-arrow-right-alt"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Boxed List / End -->
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-xl-4 col-lg-4">
+        <div class="sidebar-container margin-top-50 margin-left-40">
+          <!-- Sidebar Widget -->
+          <div class="sidebar-widget">
+            <!-- location -->
+            <div style="margin-bottom: 50px">
+              <span class="icon-material-outline-location-on"></span
+              >{{ profileInfo.city }} /{{ profileInfo.area }}
+              <br />
+              <span class="icon-material-outline-business-center"></span>
+              {{ profileInfo.category }}
+            </div>
+
+            <h3 [ngClass]="{ hidden: profileInfo.bookmarked == -1 }">
+              Bookmark
+            </h3>
+            <!-- Bookmark Button -->
+            <!-- TODO: Note active button should have the class bookmarked-->
+            <button
+              class="bookmark-button margin-bottom-25"
+              [ngClass]="{
+                bookmarked: profileInfo.bookmarked == 1,
+                hidden: profileInfo.bookmarked == -1
+              }"
+            >
+              <span class="bookmark-icon"></span>
+              <span class="bookmark-text">Bookmark</span>
+              <span class="bookmarked-text">Bookmarked</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spacer -->
+  <div class="margin-top-15"></div>
+  <!-- Spacer / End-->
+
+  <app-footer></app-footer>
+</div>
+<!-- Wrapper / End -->

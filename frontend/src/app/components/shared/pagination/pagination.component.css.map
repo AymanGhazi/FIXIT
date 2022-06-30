@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC,EAAE,CAAC,EAAE,CAAC;EACd,MAAM,EAAE,kBAAkB;EAC1B,MAAM,EAAE,OAAO;EACf,WAAW,EAAE,IAAI;CACpB",
+    "sources": [
+        "pagination.component.scss"
+    ],
+    "names": [],
+    "file": "pagination.component.css"
+}

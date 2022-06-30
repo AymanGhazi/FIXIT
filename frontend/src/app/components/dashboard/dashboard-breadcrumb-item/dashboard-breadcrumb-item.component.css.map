@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "dashboard-breadcrumb-item.component.scss"
+    ],
+    "names": [],
+    "file": "dashboard-breadcrumb-item.component.css"
+}

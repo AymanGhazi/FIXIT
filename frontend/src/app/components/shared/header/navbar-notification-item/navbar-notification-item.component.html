@@ -1,0 +1,18 @@
+<li
+  *ngFor="let notification of notifications?.items"
+  class="{{
+    notification.isNew ? 'notifications-not-read' : 'notifications-read'
+  }}"
+>
+  <a routerLink="/dashboard" class="notificationItemInner">
+    <span class="notification-icon"><i class="icon-feather-bell"></i></span>
+    <span
+      class="notification-text"
+      [innerHTML]="notification.notificationContent"
+    >
+    </span>
+    <span class="notification-text timeNotification">
+      {{ notification.createDate | timeago }}
+    </span>
+  </a>
+</li>

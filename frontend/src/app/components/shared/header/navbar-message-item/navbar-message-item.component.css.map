@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "navbar-message-item.component.scss"
+    ],
+    "names": [],
+    "file": "navbar-message-item.component.css"
+}

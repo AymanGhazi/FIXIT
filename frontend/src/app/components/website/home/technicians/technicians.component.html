@@ -1,0 +1,23 @@
+<!-- Highest Rated Freelancers -->
+<div class="section gray padding-top-65 padding-bottom-70 full-width-carousel-fix">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <!-- Section Headline -->
+          <div class="section-headline margin-top-0 margin-bottom-25">
+            <h3>Our awesome Technicians</h3>
+          </div>
+        </div>
+        <div class="col-xl-12">
+          <div class="freelancers-container freelancers-grid-layout">
+              <!-- Technicians items -->
+              <app-technician-item class="freelancers-container freelancers-grid-layout"
+                *ngFor="let technicianItem of technicianItems" 
+                [technicianItem]="technicianItem"
+              ></app-technician-item>
+          </div>
+      </div>
+      </div>
+    </div>
+</div>
+<!-- Highest Rated Freelancers / End-->

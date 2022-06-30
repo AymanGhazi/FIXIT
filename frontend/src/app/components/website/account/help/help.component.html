@@ -1,0 +1,111 @@
+<!-- Wrapper -->
+<div id="wrapper">
+  <!-- Header Container -->
+  <header id="header-container" class="fullwidth">
+    <app-navbar></app-navbar>
+  </header>
+  <div class="clearfix"></div>
+  <!-- Header Container / End -->
+
+  <!-- Titlebar -->
+  <div id="titlebar" class="gradient">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Forget Password</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-5 offset-xl-3">
+        <div class="login-register-page">
+          <!-- Welcome Text -->
+          <div class="welcome-text">
+            <h3>Please enter your Phone Number</h3>
+            <span
+              >Don't have an account? <a routerLink="/signup">Sign Up!</a></span
+            >
+          </div>
+
+          <!-- Form -->
+          <form
+            id="changePassword-form"
+            [formGroup]="changePasswordForm"
+            (ngSubmit)="changePasswordForm.valid && changePassword()"
+          >
+            <div class="input-with-icon-left">
+              <i class="icon-material-outline-textsms"></i>
+
+              <app-inputs
+                [control]="phone"
+                type="text"
+                class="input-text with-border"
+                name="phone"
+                id="phone"
+                placeholder="phone Number"
+                required
+              >
+              </app-inputs>
+            </div>
+            <div class="input-with-icon-left validate row">
+              <input
+                [formControl]="key"
+                type="text"
+                class="input-text with-border validationinput col-5 col align-self-start"
+                name="validation register"
+                id="validation-register"
+                placeholder=" Enter validation Key"
+              />
+
+              <input
+                *ngIf="validate"
+                type="button"
+                class="button validateButton col-2 col align-self-end"
+                (click)="sendKey()"
+                value="send key"
+              />
+              <input
+                *ngIf="!validate"
+                type="button"
+                (click)="submitKey()"
+                class="button validateButton col-2 col align-self-end"
+                value="submit"
+              />
+              <input
+                type="button"
+                class="btn button validateButton col-2 col align-self-end"
+                value="Resend"
+                [disabled]="!Isresend"
+              />
+              <div class="col-2 col align-self-end timer">{{ display }}</div>
+            </div>
+          </form>
+
+          <!-- Button -->
+          <button
+            class="btn button full-width button-sliding-icon ripple-effect margin-top-10 registerButton"
+            type="submit"
+            form="login-form"
+            (click)="changePassword()"
+            [disabled]="!ValidPhoneNumber"
+            [ngClass]="{ 'button-sliding-icon': !ValidPhoneNumber }"
+            form="changePasswordForm"
+          >
+            Change Passowrd
+            <i class="icon-material-outline-arrow-right-alt"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spacer -->
+  <div class="margin-top-70"></div>
+  <!-- Spacer / End-->
+  <app-footer></app-footer>
+</div>
+<!-- Wrapper / End -->

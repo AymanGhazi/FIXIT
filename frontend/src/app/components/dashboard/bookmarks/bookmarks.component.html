@@ -1,0 +1,129 @@
+<!-- Wrapper -->
+<div id="wrapper">
+  <!-- Header Container -->
+  <header id="header-container" class="fullwidth dashboard-header not-sticky">
+    <app-navbar></app-navbar>
+  </header>
+  <div class="clearfix"></div>
+  <!-- Header Container / End -->
+
+  <!-- Dashboard Container -->
+  <div class="dashboard-container">
+    <!-- Dashboard Sidebar -->
+    <div class="dashboard-sidebar">
+      <app-dashboard-sidebar></app-dashboard-sidebar>
+    </div>
+    <!-- Dashboard Sidebar / End -->
+
+    <!-- Dashboard Content
+	================================================== -->
+    <div class="dashboard-content-container" data-simplebar>
+      <div class="dashboard-content-inner">
+        <!-- Dashboard Headline -->
+        <div class="dashboard-headline">
+          <h3>Bookmarks</h3>
+
+          <!-- Breadcrumbs -->
+          <nav id="breadcrumbs" class="dark">
+            <ul>
+              <li><a routerLink="/">Home</a></li>
+              <li><a routerLink="/dashboard">Dashboard</a></li>
+              <li>Bookmarks</li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Row -->
+        <div class="row">
+          <!-- Dashboard Box -->
+          <div class="col-xl-12">
+            <div class="dashboard-box margin-top-0"></div>
+          </div>
+
+          <!-- Dashboard Box -->
+          <div class="col-xl-12">
+            <div class="dashboard-box">
+              <!-- Headline -->
+              <div class="headline">
+                <h3>
+                  <i class="icon-material-outline-face"></i> Bookmarked
+                  Technicians
+                </h3>
+              </div>
+
+              <div class="content">
+                <ul class="dashboard-box-list">
+                  <li *ngFor="let bookmarkItem of bookmarks">
+                    <!-- Overview -->
+                    <div class="freelancer-overview">
+                      <div class="freelancer-overview-inner">
+                        <!-- Avatar -->
+                        <div class="freelancer-avatar">
+                          <a href="#"
+                            ><img
+                              src="assets/images/user-avatar-big-02.jpg"
+                              alt=""
+                          /></a>
+                        </div>
+
+                        <!-- Name -->
+                        <div class="freelancer-name">
+                          <h4>
+                            <a href="#"> {{ bookmarkItem.accountName }} </a>
+                          </h4>
+                          <!-- Rating -->
+                          <app-rating
+                            [ratingItem]="bookmarkItem.rate"
+                          ></app-rating>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="buttons-to-right">
+                      <a
+                        href="#"
+                        class="button red ripple-effect ico"
+                        title="Remove"
+                        data-tippy-placement="left"
+                        ><i class="icon-feather-trash-2"></i
+                      ></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row / End -->
+        <!-- pagination / start -->
+        <div class="pagination-container margin-top-20 margin-bottom-20">
+          <nav class="pagination">
+            <ul>
+              <li class="pagination-arrow">
+                <a href="#" class="ripple-effect"
+                  ><i class="icon-material-outline-keyboard-arrow-left"></i
+                ></a>
+              </li>
+              <li><a href="#" class="ripple-effect">1</a></li>
+              <li><a href="#" class="ripple-effect current-page">2</a></li>
+              <li><a href="#" class="ripple-effect">3</a></li>
+              <li><a href="#" class="ripple-effect">4</a></li>
+              <li class="pagination-arrow">
+                <a href="#" class="ripple-effect"
+                  ><i class="icon-material-outline-keyboard-arrow-right"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- pagination / End -->
+
+        <app-dashboard-footer></app-dashboard-footer>
+      </div>
+    </div>
+    <!-- Dashboard Content / End -->
+  </div>
+  <!-- Dashboard Container / End -->
+</div>
+<!-- Wrapper / End -->

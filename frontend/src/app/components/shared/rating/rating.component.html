@@ -1,0 +1,9 @@
+<div class="freelancer-rating">
+  <div class="star-rating" [attr.data-rating]="ratingItem">
+    <span
+      *ngFor="let star of [1, 2, 3, 4, 5]"
+      class="star"
+      [ngClass]="{ empty: star > ratingItem }"
+    ></span>
+  </div>
+</div>

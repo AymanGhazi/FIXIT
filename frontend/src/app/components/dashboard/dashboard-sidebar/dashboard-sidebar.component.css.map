@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "dashboard-sidebar.component.scss"
+    ],
+    "names": [],
+    "file": "dashboard-sidebar.component.css"
+}

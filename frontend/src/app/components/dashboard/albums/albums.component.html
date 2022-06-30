@@ -1,0 +1,120 @@
+<!-- Wrapper -->
+<div id="wrapper">
+  <!-- Header Container -->
+  <header id="header-container" class="fullwidth dashboard-header not-sticky">
+    <app-navbar></app-navbar>
+  </header>
+  <div class="clearfix"></div>
+  <!-- Header Container / End -->
+
+  <!-- Dashboard Container -->
+  <div class="dashboard-container">
+    <!-- Dashboard Sidebar -->
+    <div class="dashboard-sidebar">
+      <app-dashboard-sidebar></app-dashboard-sidebar>
+    </div>
+    <!-- Dashboard Sidebar / End -->
+
+    <!-- Dashboard Content
+	================================================== -->
+    <div class="dashboard-content-container" data-simplebar>
+      <div class="dashboard-content-inner">
+        <!-- Dashboard Headline -->
+        <div class="dashboard-headline">
+          <h3>Albums</h3>
+
+          <!-- Breadcrumbs -->
+          <nav id="breadcrumbs" class="dark">
+            <ul>
+              <li><a routerLink="/">Home</a></li>
+              <li><a routerLink="/dashboard">Dashboard</a></li>
+              <li>Albums</li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Row -->
+        <div class="row">
+          <!-- Dashboard Box -->
+          <div class="col-xl-12">
+            <div class="dashboard-box margin-top-0"></div>
+          </div>
+
+          <!-- Dashboard Box -->
+          <!-- Gallary Settings -->
+          <div class="col-xl-12">
+            <div id="test1" class="dashboard-box">
+              <div class="headline">
+                <h3>
+                  <i class="icon-material-outline-add-photo-alternate"></i>
+                  Photos And Gallaries
+                </h3>
+              </div>
+              <div class="content with-padding">
+                <!-- gallaries -->
+
+                <div class="gallery_container-all">
+                  <div
+                    class="gallery_container"
+                    *ngFor="let gallary of galleries"
+                    (click)="openGallary(gallary.albumId)"
+                  >
+                    <img
+                      [src]="gallary.photos[0].photoPath"
+                      alt="Image description goes here"
+                    />
+                    <span class="gallery_title">userName</span>
+                    <span class="gallery_text">{{ gallary.title }}</span>
+                  </div>
+                </div>
+                <!-- endGallaries -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="arrowCta"></div>
+        <!-- update album options start -->
+
+        <div class="row">
+          <!-- Dashboard Box -->
+          <div class="col-xl-12">
+            <div class="dashboard-box margin-top-0"></div>
+          </div>
+
+          <!-- Dashboard Box -->
+          <!-- Gallary Settings -->
+          <div class="col-xl-12">
+            <div id="test1" class="dashboard-box">
+              <div class="headline">
+                <h3>
+                  <i class="icon-feather-upload"></i>
+                  update and upload Albums
+                </h3>
+              </div>
+              <!-- upload and edit  -->
+              <div class="content with-padding">
+                <app-album-edit-modal
+                  [photos]="photos"
+                  [title]="albumTitle"
+                ></app-album-edit-modal>
+              </div>
+              <!-- upload and edit  end -->
+            </div>
+          </div>
+        </div>
+
+        <!-- update album options end -->
+        <!-- Row / End -->
+        <!-- pagination / start -->
+
+        <!-- pagination / End -->
+
+        <app-dashboard-footer></app-dashboard-footer>
+      </div>
+    </div>
+    <!-- Dashboard Content / End -->
+  </div>
+  <!-- Dashboard Container / End -->
+</div>
+<!-- Wrapper / End -->

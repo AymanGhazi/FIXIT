@@ -1,0 +1,37 @@
+<a routerLink="/profile" class="job-listing">
+  <!-- Job Listing Details -->
+  <div class="job-listing-details">
+    <!-- Logo -->
+    <div class="job-listing-company-logo">
+      <img src="assets/images/company-logo-01.png" alt="" />
+    </div>
+
+    <!-- Details -->
+    <div class="job-listing-description">
+      <h3 class="job-listing-title">{{ technician.name }}</h3>
+      <p class="job-listing-text">{{ technician.about }}</p>
+    </div>
+
+    <!-- Bookmark -->
+    <span
+      class="bookmark-icon"
+      [ngClass]="{
+        bookmarked: technician.bookmarked == 1,
+        hidden: technician.bookmarked == -1
+      }"
+    ></span>
+  </div>
+
+  <!-- Job Listing Footer -->
+  <div class="job-listing-footer">
+    <ul>
+      <li>
+        <i class="icon-material-outline-location-on"></i> {{ technician.city }}
+      </li>
+      <!-- rating -->
+      <li>
+        <app-rating [ratingItem]="technician.rating"></app-rating>
+      </li>
+    </ul>
+  </div>
+</a>

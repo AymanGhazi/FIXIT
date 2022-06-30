@@ -1,0 +1,203 @@
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header Container -->
+    <header id="header-container" class="fullwidth">
+        <app-navbar></app-navbar>
+    </header>
+    <div class="clearfix"></div>
+    <!-- Header Container / End -->
+
+    <!-- Titlebar
+    ================================================== -->
+    <div class="single-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="single-page-header-inner">
+                        <div class="left-side">
+                            <div class="header-image"><img src="assets/images/user-avatar-big-03.jpg" alt=""></div>
+                            <div class="header-details">
+                                <h3>Person Name <span>5 years experience in Electronics</span></h3>
+                                <ul>
+                                    <li>
+                                        <div class="star-rating" data-rating="4.9">
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="verified-badge-with-title">Verified</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <!-- Breadcrumbs -->
+                            <nav id="breadcrumbs" class="white">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Browse Companies</a></li>
+                                    <li>Acodia</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-image-container" style="background-image: url('assets/images/single-company.jpg');">
+        </div>
+    </div>
+
+
+    <!-- Page Content
+    ================================================== -->
+    <div class="container">
+        <div class="row">
+
+            <!-- Content -->
+            <div class="col-xl-8 col-lg-8 content-right-offset">
+
+                <div class="single-page-section">
+                    <h3 class="margin-bottom-25">About </h3>
+
+                    <p>{{ profileInfo.about }}</p>
+
+                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+                        approaches to corporate strategy foster collaborative thinking to further the overall value
+                        proposition. Organically grow the holistic world view of disruptive innovation via workplace
+                        diversity and empowerment.</p>
+
+                    <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.
+                        Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion
+                        along the information highway will close the loop on focusing solely on the bottom line.</p>
+                </div>
+
+
+                <!-- Boxed List -->
+                <div class="boxed-list margin-bottom-60">
+                    <div class="boxed-list-headline">
+                        <h3><i class="icon-material-outline-thumb-up"></i> Reviews</h3>
+                    </div>
+                    <ul class="boxed-list-ul">
+                        <app-review-item 
+
+                        >
+
+                        </app-review-item>
+                        <li>
+                            <div class="boxed-list-item">
+                                <!-- Content -->
+                                <div class="item-content">
+                                    <h4>Doing things the right way <span>Anonymous Employee</span></h4>
+                                    <div class="item-details margin-top-10">
+                                        <div class="star-rating" data-rating="5.0">
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                        </div>
+                                        <div class="detail-item"><i class="icon-material-outline-date-range"></i> August
+                                            2018</div>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>Great company and especially ideal for the career-minded individual. The
+                                            company is large enough to offer a variety of jobs in all kinds of
+                                            interesting locations. Even if you never change roles, your job changes and
+                                            evolves as the company grows, keeping things fresh.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="boxed-list-item">
+                                <!-- Content -->
+                                <div class="item-content">
+                                    <h4>Outstanding Work Environment <span>Anonymous Employee</span></h4>
+                                    <div class="item-details margin-top-10">
+                                        <div class="star-rating" data-rating="5.0">
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                            <span class="star"></span>
+                                        </div>
+                                        <div class="detail-item"><i class="icon-material-outline-date-range"></i> May
+                                            2018</div>
+                                    </div>
+                                    <div class="item-description">
+                                        <p>They do business with integrity and rational thinking. Overall, it's an
+                                            excellent place to work, with products that are winning in the marketplace.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="centered-button margin-top-35">
+                        <a href="#small-dialog" class="popup-with-zoom-anim button button-sliding-icon">Leave a Review
+                            <i class="icon-material-outline-arrow-right-alt"></i></a>
+                    </div>
+
+                </div>
+                <!-- Boxed List / End -->
+
+            </div>
+
+
+            <!-- Sidebar -->
+            <div class="col-xl-4 col-lg-4">
+                <div class="sidebar-container margin-top-50 margin-left-40">
+                    <!-- Sidebar Widget -->
+                    <div class="sidebar-widget">
+
+                        <!-- location		 -->
+                        <div style="margin-bottom: 50px;">
+                            <ul>
+                                <li><i class="fa-regular fa-location-dot"></i> <span
+                                        class="icon-material-outline-location-on"></span>Cairo Nasr City</li>
+                                <li><span class="icon-material-outline-business-center"></span> Electronics</li>
+                            </ul>
+
+                        </div>
+
+
+
+                        <h3>Bookmark</h3>
+
+                        <!-- Bookmark Button -->
+                        <!-- TODO: Note active button should have the class bookmarked-->
+                        <button class="bookmark-button margin-bottom-25">
+                            <span class="bookmark-icon"></span>
+                            <span class="bookmark-text">Bookmark</span>
+                            <span class="bookmarked-text">Bookmarked</span>
+                        </button>
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Spacer -->
+    <div class="margin-top-15"></div>
+    <!-- Spacer / End-->
+
+    <app-footer></app-footer>
+
+</div>
+<!-- Wrapper / End -->
+

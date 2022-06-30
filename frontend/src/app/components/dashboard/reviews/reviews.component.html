@@ -1,0 +1,92 @@
+<!-- Wrapper -->
+<div id="wrapper">
+  <!-- Header Container -->
+  <header id="header-container" class="fullwidth dashboard-header not-sticky">
+    <app-navbar></app-navbar>
+  </header>
+  <div class="clearfix"></div>
+  <!-- Header Container / End -->
+
+  <!-- Dashboard Container -->
+  <div class="dashboard-container">
+    <!-- Dashboard Sidebar -->
+    <div class="dashboard-sidebar">
+      <app-dashboard-sidebar></app-dashboard-sidebar>
+    </div>
+    <!-- Dashboard Sidebar / End -->
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-content-container" data-simplebar>
+      <div class="dashboard-content-inner">
+        <!-- Dashboard Headline -->
+        <div class="dashboard-headline">
+          <h3>Reviews</h3>
+
+          <!-- Breadcrumbs -->
+          <nav id="breadcrumbs" class="dark">
+            <ul>
+              <li><a routerLink="/">Home</a></li>
+              <li><a routerLink="/dashboard">Dashboard</a></li>
+              <li>Reviews</li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Row -->
+        <div class="row">
+          <!-- Dashboard Box -->
+          <div class="col-xl-12">
+            <div class="dashboard-box margin-top-0">
+              <!-- Headline -->
+              <div class="headline">
+                <h3><i class="icon-material-outline-business"></i> Reviews</h3>
+              </div>
+
+              <div class="content">
+                <ul class="dashboard-box-list">
+                  <li *ngFor="let reviewItem of reviews">
+                    <div class="boxed-list-item">
+                      <!-- Content -->
+                      <div class="item-content">
+                        <h4>{{ reviewItem.accountName }}</h4>
+                        <div class="item-details margin-top-10">
+                          <app-rating
+                            [ratingItem]="reviewItem.rate"
+                          ></app-rating>
+
+                          <div class="detail-item">
+                            <i class="icon-material-outline-date-range"></i>
+                            {{ reviewItem.bookmarkId }}
+                          </div>
+                        </div>
+                        <div class="item-description">
+                          <p>
+                            {{ reviewItem.accountName }}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="clearfix"></div>
+            <app-pagination
+              [pagination]="{ totalItems: reviews.length }"
+            ></app-pagination>
+            <div class="clearfix"></div>
+            <!-- Pagination / End -->
+          </div>
+        </div>
+        <!-- Row / End -->
+
+        <app-dashboard-footer></app-dashboard-footer>
+      </div>
+    </div>
+    <!-- Dashboard Content / End -->
+  </div>
+  <!-- Dashboard Container / End -->
+</div>
+<!-- Wrapper / End -->

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,SAAS,EAAC,KAAK;EACf,UAAU,EAAC,KAAK;EAChB,MAAM,EAAE,IAAI;CAEf",
+    "sources": [
+        "avatar-select-modal.component.scss"
+    ],
+    "names": [],
+    "file": "avatar-select-modal.component.css"
+}

@@ -1,0 +1,35 @@
+
+.header-notifications-content ul li {
+    border-bottom: 1px solid #e6e6e6;
+    transition: 0.25s;
+    display: inline;
+}
+
+
+.header-notifications-content ul li a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.timeNotification{
+    padding-left: 0px;
+
+}
+.notifications-not-read {
+    background-color: #fafafa;
+    
+&:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #004777;;
+    display: block;
+    content: "";
+    opacity: 0;
+    transition: 0.3s;
+        opacity: 1;
+ }
+       
+    }

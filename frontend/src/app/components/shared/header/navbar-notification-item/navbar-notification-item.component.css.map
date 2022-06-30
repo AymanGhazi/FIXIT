@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,6BAA6B,CAAC,EAAE,CAAC,EAAE,CAAC;EAChC,aAAa,EAAE,iBAAiB;EAChC,UAAU,EAAE,KAAK;EACjB,OAAO,EAAE,MAAM;CAClB;;AAGD,AAAA,6BAA6B,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC;EAClC,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,MAAM;CACtB",
+    "sources": [
+        "navbar-notification-item.component.scss"
+    ],
+    "names": [],
+    "file": "navbar-notification-item.component.css"
+}

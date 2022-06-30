@@ -1,0 +1,10 @@
+<a routerLink="/search" class="category-box">
+    <div class="category-box-icon">
+    <!-- <i [ngClass]="{ categoryItem.iconClass }"></i> -->
+    <i class="{{ categoryItem.iconClass }}"></i>
+    </div>
+    <div class="category-box-counter">{{ categoryItem.itemsCount }}</div>
+    <div class="category-box-content">
+    <h3>{{ categoryItem.name }}</h3>
+    </div>
+</a>

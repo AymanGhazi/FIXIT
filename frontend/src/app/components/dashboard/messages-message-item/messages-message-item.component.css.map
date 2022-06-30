@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "messages-message-item.component.scss"
+    ],
+    "names": [],
+    "file": "messages-message-item.component.css"
+}

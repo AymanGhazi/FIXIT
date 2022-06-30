@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-12">
+        <!-- Pagination -->
+        <div class="pagination-container margin-top-30 margin-bottom-60">
+            <nav class="pagination">
+                <ul>
+                    <li class="pagination-arrow">
+                        <a (click)="gotoPage(currentPage - 1)" class="ripple-effect"><i
+                                class="icon-material-outline-keyboard-arrow-left"></i></a>
+                    </li>
+
+                    <li *ngFor='let page of pagesCount(); let i = index'>
+
+                        <a 
+                        (click)="gotoPage(i + getLoopStartPage())" 
+                        [ngClass]="{ 'current-page' : (i + getLoopStartPage()) == currentPage }">{{ (i + getLoopStartPage()) }}</a>
+                    </li>
+
+                    <li class="pagination-arrow">
+                        <a (click)="gotoPage(currentPage + 1)" class="ripple-effect"><i
+                                class="icon-material-outline-keyboard-arrow-right"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

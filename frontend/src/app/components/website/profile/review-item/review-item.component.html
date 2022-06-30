@@ -1,0 +1,18 @@
+<li class="reviewItem">
+  <div class="boxed-list-item">
+    <!-- Content -->
+    <div class="item-content">
+      <h4>{{ reviewItem.accountName }}</h4>
+      <div class="item-details margin-top-10">
+        <app-rating [ratingItem]="reviewItem.rate"></app-rating>
+        <div class="detail-item">
+          <i class="icon-material-outline-date-range"></i>
+          {{ reviewItem.createDate | timeago }}
+        </div>
+      </div>
+      <div class="item-description">
+        <p>{{ reviewItem.reviewText }}</p>
+      </div>
+    </div>
+  </div>
+</li>

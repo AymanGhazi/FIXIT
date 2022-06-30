@@ -1,0 +1,25 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">User Name</h4>
+
+  <button
+    type="button"
+    class="btn-close close pull-right"
+    aria-label="Close"
+    (click)="BsModalRef.hide()"
+  >
+    <span aria-hidden="true" class="visually-hidden">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <ngx-gallery
+    style="display: inline-block; margin-bottom: 20px"
+    [options]="galleryOptions"
+    [images]="GallaryPhotos"
+    class="ngx-gallery"
+  ></ngx-gallery>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" (click)="BsModalRef.hide()">
+    Cancel
+  </button>
+</div>

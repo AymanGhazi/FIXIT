@@ -1,0 +1,9 @@
+.text-danger {
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
+}
+
+#emailaddress-register {
+  max-width: 80%;
+}
+/*# sourceMappingURL=inputs.component.css.map */

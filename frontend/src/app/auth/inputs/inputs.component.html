@@ -1,0 +1,68 @@
+<input
+  [formControl]="control"
+  [type]="type"
+  [attr.style]="marginleft"
+  [disabled]="disabled"
+  [placeholder]="placeholder"
+  [prefix]="prefix"
+  [dropSpecialCharacters]="false"
+  [mask]="format"
+  class="inputtext"
+/>
+<ng-container *ngIf="control.touched && control.dirty">
+  <p style="color: red" *ngIf="control.errors?.['pattern']">
+    password must be at least 8 characters long , have 1 uppercase letter, have
+    1 lowercase letter have 1 number
+  </p>
+
+  <p *ngIf="control.errors?.['required']  " style="color: red">
+    Field is required
+  </p>
+  <!-- minlength validation  -->
+  <p
+    *ngIf="
+      control.errors?.['minlength']   "
+    style="color: red"
+  >
+    the value you inputed is
+    {{control.errors?.['minlength'].actualLength}}
+    characters long
+  </p>
+  <p
+    *ngIf="
+      control.errors?.['email']"
+    style="color: red"
+  >
+    you must enter a valid Email
+  </p>
+  <p
+    *ngIf="
+      control.errors?.['min']"
+    class="text-danger"
+    style="color: red"
+  >
+    value is too low
+  </p>
+  <p
+    *ngIf="
+      control.errors?.['max']"
+    class="text-danger"
+    style="color: red"
+  >
+    value is too heigh
+  </p>
+  <p
+    *ngIf="
+      control.errors?.['Notmatch']"
+    class="text-danger"
+  >
+    password do not Match
+  </p>
+  <p
+    *ngIf="
+      control.errors?.['emailtoken']"
+    class="text-danger"
+  >
+    Email is token, please try another Email
+  </p>
+</ng-container>

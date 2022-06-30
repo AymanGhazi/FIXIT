@@ -1,0 +1,30 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">Edit Roles For</h4>
+
+  <button
+    type="button"
+    class="btn-close close pull-right"
+    aria-label="Close"
+    (click)="BsModalRef.hide()"
+  >
+    <span aria-hidden="true" class="visually-hidden">&times;</span>
+  </button>
+</div>
+<div class="modal-body row">
+  <div class="form-check col-md-4" *ngFor="let avatar of avatars">
+    <div
+      [ngClass]="{ 'border border-success': avatar === selectedAvatar }"
+      (click)="selectedAvatar = avatar"
+    >
+      <img [src]="avatar" alt="" class="img img-circle" />
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" (click)="updateSelectedAvatar()">
+    Submit
+  </button>
+  <button type="button" class="btn btn-default" (click)="BsModalRef.hide()">
+    Cancel
+  </button>
+</div>

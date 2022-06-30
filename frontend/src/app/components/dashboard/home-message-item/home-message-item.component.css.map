@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "home-message-item.component.scss"
+    ],
+    "names": [],
+    "file": "home-message-item.component.css"
+}

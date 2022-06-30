@@ -1,0 +1,13 @@
+<!-- Notification -->
+<li class="notifications-not-read" *ngFor="let message of messages">
+  <a routerLink="/dashboard/messages">
+    <span class="notification-avatar status-online"
+      ><img src="/assets/avatars/avatar-{{ message.fromAvatarId }}.png" alt=""
+    /></span>
+    <div class="notification-text">
+      <strong>{{ message.messageDate | timeago }}</strong>
+      <p class="notification-msg-text">{{ message.messageText }}</p>
+      <span class="color">{{ message.messageDate | timeago }}</span>
+    </div>
+  </a>
+</li>

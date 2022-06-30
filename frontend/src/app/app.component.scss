@@ -1,0 +1,9 @@
+#screen-dimmer {
+    position: fixed;
+    z-index: 2000;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(#000000, 0.5);
+    display: block !important;
+}
+ 

@@ -1,0 +1,1434 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "avatarId":1,
+      "userName": "Booth",
+      "gender": "male",
+      "created": "2019-11-21",
+      "lastActive": "2020-06-26",
+      "introduction": "Anim elit in aliquip tempor culpa. Ipsum minim esse eiusmod Lorem quis culpa ut eiusmod ea. Fugiat aliqua adipisicing nostrud eu officia tempor. Quis esse esse officia aliqua laboris laboris sit. Amet proident in mollit exercitation ullamco culpa sunt nulla voluptate commodo ex consectetur magna.\r\n",
+      "city": "Ona",
+      "country": "Viet Nam",
+      "area": "California",
+      "photoUrl": "http://placehold.it/32x32",
+      "age": 38,
+      "phone": "+01010359722",
+      "roles": "customer"
+    },
+    {
+      "id": 2,
+      "avatarId":1,
+      "userName": "Lily",
+      "gender": "male",
+      "created": "2020-03-30",
+      "lastActive": "2020-05-11",
+      "introduction": "Et in pariatur et enim ad eiusmod dolor irure eu voluptate adipisicing. Cupidatat occaecat non deserunt culpa dolor tempor pariatur commodo. Velit sit magna velit ut anim cillum et dolor quis dolor incididunt dolore. Est non nostrud dolor proident officia cillum elit duis excepteur deserunt laboris qui velit.\r\n",
+      "city": "Homestead",
+      "country": "Djibouti",
+      "area": "Kansas",
+      "photoUrl": "http://placehold.it/32x32",
+      "age": 34,
+      "phone": "+01010359722",
+      "token": "9bc6b18b-62ac-4d54-8e4b-37d1459e118e",
+      "roles": "customer"
+    },
+    {
+      "id": 3,
+      "avatarId":1,
+      "userName": "Ellison",
+      "gender": "male",
+      "created": "2019-12-04",
+      "lastActive": "2020-05-06",
+      "introduction": "Proident tempor culpa velit aute minim dolore esse in et aute proident culpa. Tempor magna laborum do ea in exercitation ex labore cillum excepteur laboris Lorem anim. Mollit non dolore veniam commodo adipisicing exercitation Lorem ea mollit fugiat culpa anim dolor. Mollit in cillum eu consectetur commodo eiusmod nostrud. Elit magna pariatur magna voluptate qui. Id velit veniam Lorem laboris nostrud magna in duis elit enim eiusmod magna irure magna.\r\n",
+      "city": "Clay",
+      "country": "Mozambique",
+      "area": "South Dakota",
+      "photoUrl": "http://placehold.it/32x32",
+      "age": 40,
+      "phone": "+01010359722",
+      "token": "9bc6b18b-62ac-4d54-8e4b-37d1459e118e",
+      "roles": "technician"
+    },
+    {
+      "id": 4,
+      "avatarId":1,
+      "userName": "Reese",
+      "gender": "male",
+      "created": "2020-06-11",
+      "lastActive": "2020-06-22",
+      "introduction": "Sint quis aliqua incididunt ullamco excepteur ea duis proident commodo et sint. Fugiat ea aliquip deserunt adipisicing. Incididunt sit nulla magna cupidatat. Amet incididunt reprehenderit aliquip sint qui. Cupidatat exercitation voluptate aliquip qui incididunt consequat culpa minim duis et aute eu officia eiusmod. Sint cillum eu aute dolor incididunt magna pariatur aliquip nulla. Anim elit minim consectetur irure.\r\n",
+      "city": "Hatteras",
+      "country": "Ethiopia",
+      "area": "Ohio",
+      "photoUrl": "http://placehold.it/32x32",
+      "age": 39,
+      "phone": "+01010359722",
+      "token": "9bc6b18b-62ac-4d54-8e4b-37d1459e118e",
+      "roles": "technician"
+    },
+    {
+      "id": 5,
+      "avatarId":3,
+      
+      "userName": "Ayman",
+      "gender": "male",
+      "created": "2019-11-25",
+      "lastActive": "2020-05-13",
+      "introduction": "Tempor laborum incididunt ipsum anim eu sunt mollit dolor exercitation sit cupidatat nisi. Non ad aliquip elit consequat. Est fugiat anim excepteur ullamco ad anim aliquip et. Anim adipisicing ipsum ea magna deserunt consectetur minim duis commodo.\r\n",
+      "city": "Gerber",
+      "country": "Uzbekistan",
+      "area": "Texas",
+      "photoUrl": "http://placehold.it/32x32",
+      "age": 38,
+      "phone": "+01010359722",
+      "token": "9bc6b18b-62ac-4d54-8e4b-37d1459e118e",
+      "roles": "technician"
+    },
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$9fmcORoLcWwxItgnxskBmebvuFNZKvIilE04toZRKNy9l0QeOfZ0C",
+      "firstname": "Olivier",
+      "lastname": "Monge",
+      "age": 32,
+      "id": 6
+    }
+  ],
+  "Technicians": [
+    {
+      "id": 1,
+      "bookmarked": 1,
+      "name": "Tom Smith",
+      "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit aut soluta .",
+      "rating": 0,
+      "city": "Ona",
+      "area": "California",
+      "photoUrl": "https://picsum.photos/200",
+      "category": "Electronics",
+      "avatarId": 2
+    },
+    {
+      "id": 2,
+      "bookmarked": 1,
+      "name": "Tom Smith",
+      "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit aut soluta .",
+      "rating": 1,
+      "city": "Ona",
+      "area": "California",
+      "photoUrl": "https://picsum.photos/200",
+      "category": "Electronics",
+      "avatarId": 3
+    },
+    {
+      "id": 3,
+      "bookmarked": 1,
+      "name": "Tom Smith",
+      "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit aut soluta .",
+      "rating": 5,
+      "city": "Ona",
+      "area": "California",
+      "photoUrl": "https://picsum.photos/200",
+      "category": "Electronics",
+      "avatarId": 2
+    },
+    {
+      "id": 4,
+      "bookmarked": 1,
+      "name": "Tom Smith",
+      "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit aut soluta .",
+      "rating": 3,
+      "city": "Ona",
+      "area": "California",
+      "photoUrl": "https://picsum.photos/200",
+      "category": "Electronics",
+      "avatarId": 5
+    }
+  ],
+  "galleries": [
+    {
+      "albumId": 7,
+      "accountId": 6,
+      "title": "Album 7",
+      "createDate": "2022-06-28T11:35:07.340+00:00",
+      "updateDate": null,
+      "photos": [
+        {
+          "photoId": 49,
+          "albumId": 7,
+          "photoPath": "https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/uploads/job_description_template/Technician.jpg",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        },
+        {
+          "photoId": 50,
+          "albumId": 7,
+          "photoPath": "https://scc.losrios.edu//scc/main/img/3-Academics/2-Programs-Majors/Industrial-Maintenance-Mechanic-Technician-1200x630.jpg",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        },
+        {
+          "photoId": 51,
+          "albumId": 7,
+          "photoPath": "https://valuekeep.com/wp-content/uploads/2020/10/Header-Maintenance-Technician.png",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        },
+        {
+          "photoId": 52,
+          "albumId": 7,
+          "photoPath": "https://www.neit.edu/wp-content/uploads/2021/06/automotive-technician.jpg",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        },
+        {
+          "photoId": 53,
+          "albumId": 7,
+          "photoPath": "https://scitexas.edu/wp-content/uploads/2020/02/What-Is-An-Electrical-Technician-SCI-1-min-1.png",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        },
+        {
+          "photoId": 54,
+          "albumId": 7,
+          "photoPath": "https://www.deere.com/assets/images/common/our-company/careers/Service%20Technician_r4g055224.jpg",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        },
+        {
+          "photoId": 55,
+          "albumId": 7,
+          "photoPath": "https://www.niagaracollege.ca/technology/wp-content/uploads/sites/72/2019/07/i-elnc.jpg",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        },
+        {
+          "photoId": 56,
+          "albumId": 7,
+          "photoPath": "https://thumbs.dreamstime.com/b/happy-hvac-technician-recovering-refrigerant-smiling-broken-air-conditioner-condensing-unit-187695414.jpg",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        }
+      ]
+    },
+    {
+      "albumId": 1,
+      "accountId": 6,
+      "title": "Album 7",
+      "createDate": "2022-06-28T11:35:07.340+00:00",
+      "updateDate": null,
+      "photos": [
+        {
+          "photoId": 49,
+          "albumId": 7,
+          "photoPath": "https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/uploads/job_description_template/Technician.jpg",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        },
+        {
+          "photoId": 50,
+          "albumId": 7,
+          "photoPath": "https://scc.losrios.edu//scc/main/img/3-Academics/2-Programs-Majors/Industrial-Maintenance-Mechanic-Technician-1200x630.jpg",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        }
+      ]
+    },
+    {
+      "albumId": 2,
+      "accountId": 6,
+      "title": "Album 7",
+      "createDate": "2022-06-28T11:35:07.340+00:00",
+      "updateDate": null,
+      "photos": [
+        {
+          "photoId": 49,
+          "albumId": 7,
+          "photoPath": "https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/uploads/job_description_template/Technician.jpg",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        }
+      ]
+    },
+    {
+      "albumId": 3,
+      "accountId": 6,
+      "title": "Album 7",
+      "createDate": "2022-06-28T11:35:07.340+00:00",
+      "updateDate": null,
+      "photos": [
+        {
+          "photoId": 52,
+          "albumId": 7,
+          "photoPath": "https://www.neit.edu/wp-content/uploads/2021/06/automotive-technician.jpg",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        },
+        {
+          "photoId": 53,
+          "albumId": 7,
+          "photoPath": "https://scitexas.edu/wp-content/uploads/2020/02/What-Is-An-Electrical-Technician-SCI-1-min-1.png",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        },
+        {
+          "photoId": 54,
+          "albumId": 7,
+          "photoPath": "https://www.deere.com/assets/images/common/our-company/careers/Service%20Technician_r4g055224.jpg",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        },
+        {
+          "photoId": 55,
+          "albumId": 7,
+          "photoPath": "https://www.niagaracollege.ca/technology/wp-content/uploads/sites/72/2019/07/i-elnc.jpg",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        },
+        {
+          "photoId": 56,
+          "albumId": 7,
+          "photoPath": "https://thumbs.dreamstime.com/b/happy-hvac-technician-recovering-refrigerant-smiling-broken-air-conditioner-condensing-unit-187695414.jpg",
+          "createDate": "2022-06-28T11:35:07.350+00:00",
+          "updateDate": null
+        }
+      ]
+    }
+  ],
+  "notifications":{
+        "items": [
+            {
+                "notificationId": 26,
+                "accountId": 6,
+                "notificationContent": "Welcome to <b>Fixit</b> <3.",
+                 "isNew": false,
+                "createDate": "2022-06-27T19:49:34.534+00:00"
+            },
+            {
+                "notificationId": 27,
+                "accountId": 6,
+                 "notificationContent": "Welcome to <b>Fixit</b> <3.",
+                 "isNew": true,
+                "createDate": "2022-06-27T19:49:34.534+00:00"
+            },
+            {
+                "notificationId": 28,
+                "accountId": 6,
+                 "notificationContent": "Welcome to <b>Fixit</b> <3.",
+                 "isNew": false,
+                "createDate": "2022-06-27T19:49:34.534+00:00"
+            },
+            {
+                "notificationId": 29,
+                "accountId": 6,
+                "notificationContent": "Welcome to <b>Fixit</b> <3.",
+                 "isNew": false,
+                "createDate": "2022-06-27T19:49:34.534+00:00"
+            },
+            {
+               "isNew": true,
+                "notificationId": 30,
+                "accountId": 6,
+                "notificationContent": "Make sure your <a href=\"#\">Profile</a> is updated.",
+                "createDate": "2022-06-27T19:49:34.534+00:00"
+            }
+        ],
+        "itemsCount": 5
+    },
+  "messages": [
+    {
+      "id": 1,
+      "messageText": "Hi, Are you available for some work next friday?",
+      "messageId": 1,
+      "messageDate": "2022-06-27T19:49:34.530+00:00",
+      "fromAvatarId": 1,
+      "toAvatarId": 1,
+      "isMe": false
+    },
+    {
+      "id": 2,
+      "messageText": "Yes, please give more details! sadadasdasd sdasdasdasdasdasd",
+      "messageId": 2,
+      "messageDate": "2022-06-27T19:49:34.530+00:00",
+      "fromAvatarId": 1,
+      "toAvatarId": 1,
+      "isMe": true
+    },
+    {
+      "id": 3,
+      "messageText": "Yes, please give more details! asdasdadasdasdas asdasdasdsadasd asdasdasdasd ",
+      "messageId": 2,
+      "messageDate": "2022-06-27T19:49:34.530+00:00",
+      "fromAvatarId": 1,
+      "toAvatarId": 1,
+      "isMe": true
+    },
+    {
+      "id": 4,
+      "messageText": "Yes, please give more details! sadasdadasdasd asdadasdasdas asdasdasdasda asdad",
+      "messageId": 2,
+      "messageDate": "2022-06-27T19:49:34.530+00:00",
+      "fromAvatarId": 1,
+      "toAvatarId": 1,
+      "isMe": true
+    },
+    {
+      "messageId": 3,
+      "messageText": "sdasdadasdasd",
+      "isMe": true,
+      "messageDate": "2022-06-29T16:50:24.125Z",
+      "toAvatarId": 1,
+      "id": 5
+    },
+    {
+      "messageId": 4,
+      "messageText": "sdasdasdad",
+      "isMe": true,
+      "messageDate": "2022-06-29T16:51:51.171Z",
+      "toAvatarId": 1,
+      "id": 6
+    },
+    {
+      "messageId": 5,
+      "messageText": "sdfsfsdfsdfsfsdfsdf",
+      "isMe": true,
+      "messageDate": "2022-06-29T16:52:47.427Z",
+      "toAvatarId": 1,
+      "id": 7
+    },
+    {
+      "messageId": 6,
+      "messageText": "zccsczscszc",
+      "isMe": true,
+      "messageDate": "2022-06-29T16:53:00.778Z",
+      "toAvatarId": 1,
+      "id": 8
+    },
+    {
+      "messageId": 7,
+      "messageText": "fgdgdfgdfg",
+      "isMe": true,
+      "messageDate": "2022-06-29T17:14:12.470Z",
+      "toAvatarId": 1,
+      "id": 9
+    },
+    {
+      "messageId": 7,
+      "messageText": "111111111111111",
+      "isMe": true,
+      "messageDate": "2022-06-29T17:14:18.470Z",
+      "toAvatarId": 1,
+      "id": 10
+    },
+    {
+      "messageId": 8,
+      "messageText": "dzfsadfsdfds",
+      "isMe": true,
+      "messageDate": "2022-06-29T17:43:11.378Z",
+      "toAvatarId": 1,
+      "id": 11
+    }
+  ],
+  "contacts": [
+    {
+      "accountId": 1,
+      "avatarId": 1,
+      "accountName": "User 1",
+      "lastMessagePreview": "Yes, please give more details!",
+      "lastMessageTime": "2022-06-27T19:49:34.530+00:00"
+    },
+    {
+      "accountId": 2,
+      "avatarId": 1,
+      "accountName": "User 1",
+      "lastMessagePreview": "Yes, please give more details!",
+      "lastMessageTime": "2022-06-27T19:49:34.530+00:00"
+    },
+    {
+      "accountId": 3,
+      "avatarId": 1,
+      "accountName": "User 1",
+      "lastMessagePreview": "Yes, please give more details!",
+      "lastMessageTime": "2022-06-27T19:49:34.530+00:00"
+    },
+    {
+      "accountId": 4,
+      "avatarId": 1,
+      "accountName": "User 1",
+      "lastMessagePreview": "Yes, please give more details!",
+      "lastMessageTime": "2022-06-27T19:49:34.530+00:00"
+    },
+    {
+      "accountId": 5,
+      "avatarId": 1,
+      "accountName": "User 1",
+      "lastMessagePreview": "Yes, please give more details! dsdfsdfsdfsdfsdfsdfsdf",
+      "lastMessageTime": "2022-06-27T19:49:34.530+00:00"
+    },
+    {
+      "accountId": 6,
+      "avatarId": 1,
+      "accountName": "User 1",
+      "lastMessagePreview": "Yes, please give more details! sdfsdfsdfsdfsfsdfsdfsdfsdf",
+      "lastMessageTime": "2022-06-27T19:49:34.530+00:00"
+    }
+  ],
+  "rates": [
+    {
+      "id": 1,
+      "username": "Laurie",
+      "userId": 1,
+      "rate": 3
+    },
+    {
+      "id": 2,
+      "username": "Misty",
+      "userId": 2,
+      "rate": 3
+    },
+    {
+      "id": 3,
+      "username": "Minerva",
+      "userId": 3,
+      "rate": 4
+    },
+    {
+      "id": 4,
+      "username": "Myrtle",
+      "userId": 4,
+      "rate": 1
+    },
+    {
+      "id": 5,
+      "username": "Callie",
+      "userId": 5,
+      "rate": 4
+    }
+  ],
+  "bookmarks": [
+    {
+      "accountId": "6",
+      "bookmarkId": 26,
+      "rate": 3,
+      "accountName": "Technician 3333"
+    },
+    {
+      "accountId": "6",
+      "bookmarkId": 26,
+      "rate": 3,
+      "accountName": "Technician 3333"
+    },
+    {
+      "accountId": "6",
+      "bookmarkId": 26,
+      "rate": 3,
+      "accountName": "Technician 3333"
+    },
+    {
+      "accountId": "6",
+      "bookmarkId": 26,
+      "rate": 3,
+      "accountName": "Technician 3333"
+    }
+  ],
+  "searchItem": [
+    {
+      "id": 1,
+      "username": "Bauer",
+      "userId": 1,
+      "photoUrl": "https://randomuser.me/api/portraits/man/68.jpg",
+      "category": "carpenter",
+      "rate": 4,
+      "city": "Avalon",
+      "area": "Arkansas",
+      "country": "St. Helena"
+    },
+    {
+      "id": 2,
+      "username": "Faulkner",
+      "userId": 2,
+      "photoUrl": "https://randomuser.me/api/portraits/man/66.jpg",
+      "category": "carpenter",
+      "rate": 5,
+      "city": "Martell",
+      "area": "Kansas",
+      "country": "Burundi"
+    },
+    {
+      "id": 3,
+      "username": "Lamb",
+      "userId": 3,
+      "photoUrl": "https://randomuser.me/api/portraits/man/79.jpg",
+      "category": "carpenter",
+      "rate": 5,
+      "city": "Osmond",
+      "area": "Nebraska",
+      "country": "Hungary"
+    },
+    {
+      "id": 4,
+      "username": "Blackburn",
+      "userId": 4,
+      "photoUrl": "https://randomuser.me/api/portraits/man/80.jpg",
+      "category": "carpenter",
+      "rate": 3,
+      "city": "Garberville",
+      "area": "South Dakota",
+      "country": "Vanuatu"
+    },
+    {
+      "id": 5,
+      "username": "Vega",
+      "userId": 5,
+      "photoUrl": "https://randomuser.me/api/portraits/man/56.jpg",
+      "category": "carpenter",
+      "rate": 2,
+      "city": "Riverton",
+      "area": "Delaware",
+      "country": "Senegal"
+    }
+  ],
+  "categories": [
+    {
+      "iconClass": "icon-line-awesome-pencil",
+      "id": 1,
+      "name": "Web & Software Dev",
+      "itemsCount": 150
+    },
+    {
+      "iconClass": "icon-line-awesome-pie-chart",
+      "id": 1,
+      "name": "Web & Software Dev",
+      "itemsCount": 150
+    },
+    {
+      "iconClass": "icon-line-awesome-image",
+      "id": 1,
+      "name": "Web & Software Dev",
+      "itemsCount": 150
+    },
+    {
+      "iconClass": "icon-line-awesome-file-code-o",
+      "id": 1,
+      "name": "Web & Software Dev",
+      "itemsCount": 150
+    },
+    {
+      "iconClass": "icon-line-awesome-file-code-o",
+      "id": 1,
+      "name": "Web & Software Dev",
+      "itemsCount": 150
+    },
+    {
+      "iconClass": "icon-line-awesome-file-code-o",
+      "id": 1,
+      "name": "Web & Software Dev",
+      "itemsCount": 150
+    },
+    {
+      "iconClass": "icon-line-awesome-file-code-o",
+      "id": 1,
+      "name": "Web & Software Dev",
+      "itemsCount": 150
+    }
+  ],
+  "reviews": [
+    {
+      "accountId": 6,
+      "createDate": "2022-06-27T19:49:34.539+00:00",
+      "reviewText": "Awesome, Proffesional, Perfect time commitment",
+      "rate": 5,
+      "accountName": "User 1"
+    },
+    {
+      "accountId": 6,
+      "createDate": "2022-06-27T19:49:34.539+00:00",
+      "reviewText": "Awesome, Proffesional, Perfect time commitment",
+      "rate": 5,
+      "accountName": "User 1"
+    },
+    {
+      "accountId": 6,
+      "createDate": "2022-06-27T19:49:34.539+00:00",
+      "reviewText": "Awesome, Proffesional, Perfect time commitment",
+      "rate": 5,
+      "accountName": "User 1"
+    },
+    {
+      "accountId": 6,
+      "createDate": "2022-06-27T19:49:34.539+00:00",
+      "reviewText": "Awesome, Proffesional, Perfect time commitment",
+      "rate": 5,
+      "accountName": "User 1"
+    }
+  ],
+  "dashboardInfo": {
+    "id": 1,
+    "totalReviews": 5,
+    "totalMessages": 2,
+    "totalBookmarks": 4
+  },
+  "dashboardSettings": {
+    "accountId": 6,
+    "name": "Technician 3333",
+    "mobile": "01234567896",
+    "password": "",
+    "isVerified": 1,
+    "categoryId": 1,
+    "cityId": 1,
+    "areaId": 1,
+    "avatarId": 1,
+    "type": "T",
+    "introduction": "Anim elit in aliquip tempor culpa. Ipsum minim esse eiusmod Lorem quis culpa ut eiusmod ea. Fugiat aliqua adipisicing nostrud eu officia tempor. Quis esse esse officia aliqua laboris laboris sit. Amet proident in mollit exercitation ullamco culpa sunt nulla voluptate commodo ex consectetur magna.\r\n",
+    "mobiles": [
+      {
+        "mobileId": 1,
+        "accountId": 6,
+        "mobile": "123467896111",
+        "createDate": "2022-06-27T19:49:34.520+00:00"
+      },
+      {
+        "mobileId": 2,
+        "accountId": 6,
+        "mobile": "1234678962",
+        "createDate": "2022-06-27T19:49:34.520+00:00"
+      },
+      {
+        "mobileId": 3,
+        "accountId": 6,
+        "mobile": "1234678963",
+        "createDate": "2022-06-27T19:49:34.520+00:00"
+      },
+      {
+        "mobileId": 4,
+        "accountId": 6,
+        "mobile": "1234678964",
+        "createDate": "2022-06-27T19:49:34.520+00:00"
+      }
+    ],
+    "createDate": "2022-06-27T19:49:34.515+00:00",
+    "updateDate": "2022-06-28T10:09:31.235+00:00",
+    "newPassword": "",
+    "confirmPassword": ""
+  },
+  "locations": [
+    {
+      "id": 1,
+      "cityId": 1,
+      "name": "Cairo",
+      "areas": [
+        {
+          "areaId": 1,
+          "cityId": 1,
+          "name": "EL Shrouk",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 2,
+          "cityId": 1,
+          "name": "1st Settlement",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 3,
+          "cityId": 1,
+          "name": "Fifth Settlement",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 4,
+          "cityId": 1,
+          "name": "Madenti",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 5,
+          "cityId": 1,
+          "name": "El Rehab",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 6,
+          "cityId": 1,
+          "name": "10th Of Ramdan",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 7,
+          "cityId": 1,
+          "name": "Badr City",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 8,
+          "cityId": 1,
+          "name": "New Heliopolis City",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 9,
+          "cityId": 1,
+          "name": "EL Zamalek",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 10,
+          "cityId": 1,
+          "name": "Heliopolis",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 11,
+          "cityId": 1,
+          "name": "Nasser City",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 12,
+          "cityId": 1,
+          "name": "EL Qobbah",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 13,
+          "cityId": 1,
+          "name": "EL Maadi",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 14,
+          "cityId": 1,
+          "name": "EL Mokkatm",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 15,
+          "cityId": 1,
+          "name": "EL Mohandsen",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 16,
+          "cityId": 1,
+          "name": "EL Shekh Zayed",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 17,
+          "cityId": 1,
+          "name": "EL Dokki",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 18,
+          "cityId": 1,
+          "name": "Giza Square",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 19,
+          "cityId": 1,
+          "name": "EL Haram",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 20,
+          "cityId": 1,
+          "name": "Fissal",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 21,
+          "cityId": 1,
+          "name": "Shobra",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 22,
+          "cityId": 1,
+          "name": "Obour",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 23,
+          "cityId": 1,
+          "name": "EL Matareya",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 24,
+          "cityId": 1,
+          "name": "6th October",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 25,
+          "cityId": 1,
+          "name": "Helwan",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 26,
+          "cityId": 1,
+          "name": "Ain Shams",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 27,
+          "cityId": 1,
+          "name": "DownTown",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 28,
+          "cityId": 1,
+          "name": "Al-Manyal",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 29,
+          "cityId": 1,
+          "name": "Al-Agouza",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 30,
+          "cityId": 1,
+          "name": "Other",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        }
+      ],
+      "createDate": "2022-06-28T11:35:07.303+00:00",
+      "updateDate": null
+    },
+    {
+      "id": 2,
+      "cityId": 2,
+      "name": "Alexandria",
+      "areas": [
+        {
+          "areaId": 31,
+          "cityId": 2,
+          "name": "Abou Qeer",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 32,
+          "cityId": 2,
+          "name": "EL HadaraEL Amreya",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 33,
+          "cityId": 2,
+          "name": "EL Asafra",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 34,
+          "cityId": 2,
+          "name": "EL Azareta",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 35,
+          "cityId": 2,
+          "name": "Bahari",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 36,
+          "cityId": 2,
+          "name": "Bokla",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 37,
+          "cityId": 2,
+          "name": "Burg ELArab",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 38,
+          "cityId": 2,
+          "name": "ELQabary",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 39,
+          "cityId": 2,
+          "name": "Fleming",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 40,
+          "cityId": 2,
+          "name": "Janklees",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 41,
+          "cityId": 2,
+          "name": "Gleem",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 42,
+          "cityId": 2,
+          "name": "Kafr Abdou",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 43,
+          "cityId": 2,
+          "name": "Louran",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 44,
+          "cityId": 2,
+          "name": "EL Mandara",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 45,
+          "cityId": 2,
+          "name": "Miami",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 46,
+          "cityId": 2,
+          "name": "San Stefano",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 47,
+          "cityId": 2,
+          "name": "Sidi BeshrSidi Gaber",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 48,
+          "cityId": 2,
+          "name": "EL Shatbi",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 49,
+          "cityId": 2,
+          "name": "Sporting",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 50,
+          "cityId": 2,
+          "name": "Victoria",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 51,
+          "cityId": 2,
+          "name": "Smouha",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 52,
+          "cityId": 2,
+          "name": "Stanly",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 53,
+          "cityId": 2,
+          "name": "Wabor EL Maya",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 54,
+          "cityId": 2,
+          "name": "EL Hanovil",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 55,
+          "cityId": 2,
+          "name": "EL Bitash",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 56,
+          "cityId": 2,
+          "name": "Other",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        }
+      ],
+      "createDate": "2022-06-28T11:35:07.303+00:00",
+      "updateDate": null
+    },
+    {
+      "id": 3,
+      "cityId": 3,
+      "name": "North Coast",
+      "areas": [
+        {
+          "areaId": 57,
+          "cityId": 3,
+          "name": "Marsilia",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 58,
+          "cityId": 3,
+          "name": "Nees",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 59,
+          "cityId": 3,
+          "name": "Sidi Kerir",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 60,
+          "cityId": 3,
+          "name": "Casablanca",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 61,
+          "cityId": 3,
+          "name": "Golden Beach",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 62,
+          "cityId": 3,
+          "name": "Maraqia",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 63,
+          "cityId": 3,
+          "name": "Rivera",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 64,
+          "cityId": 3,
+          "name": "Green",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 65,
+          "cityId": 3,
+          "name": "Long Beach",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 66,
+          "cityId": 3,
+          "name": "Marbilla",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 67,
+          "cityId": 3,
+          "name": "Other",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        }
+      ],
+      "createDate": "2022-06-28T11:35:07.303+00:00",
+      "updateDate": null
+    },
+    {
+      "id": 4,
+      "cityId": 4,
+      "name": "El-Mansoura",
+      "areas": [
+        {
+          "areaId": 68,
+          "cityId": 4,
+          "name": "El-Salam",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 69,
+          "cityId": 4,
+          "name": "Sandob",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 70,
+          "cityId": 4,
+          "name": "Torreil",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 71,
+          "cityId": 4,
+          "name": "El-Mokhtlat",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 72,
+          "cityId": 4,
+          "name": "Gdeila",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 73,
+          "cityId": 4,
+          "name": "El-Galaa",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 74,
+          "cityId": 4,
+          "name": "Hay El-Gamaa",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 75,
+          "cityId": 4,
+          "name": "El-Mashaya",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 76,
+          "cityId": 4,
+          "name": "El-Seka El-Gdeeda",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 77,
+          "cityId": 4,
+          "name": "Port Saied St",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 78,
+          "cityId": 4,
+          "name": "Other",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        }
+      ],
+      "createDate": "2022-06-28T11:35:07.303+00:00",
+      "updateDate": null
+    },
+    {
+      "id": 5,
+      "cityId": 5,
+      "name": "Tanta",
+      "areas": [
+        {
+          "areaId": 79,
+          "cityId": 5,
+          "name": "El-Helw",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 80,
+          "cityId": 5,
+          "name": "El-Geish",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 81,
+          "cityId": 5,
+          "name": "Saied",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 82,
+          "cityId": 5,
+          "name": "Hassan",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 83,
+          "cityId": 5,
+          "name": "Hassan Radwan",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 84,
+          "cityId": 5,
+          "name": "The stadium",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 85,
+          "cityId": 5,
+          "name": "El-Nadi",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 86,
+          "cityId": 5,
+          "name": "El-Modereia",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 87,
+          "cityId": 5,
+          "name": "Botros",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 88,
+          "cityId": 5,
+          "name": "Other",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        }
+      ],
+      "createDate": "2022-06-28T11:35:07.303+00:00",
+      "updateDate": null
+    },
+    {
+      "id": 6,
+      "cityId": 6,
+      "name": "Damnhour",
+      "areas": [
+        {
+          "areaId": 89,
+          "cityId": 6,
+          "name": "New Damnhour",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 90,
+          "cityId": 6,
+          "name": "El-Sadr",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 91,
+          "cityId": 6,
+          "name": "Admoun",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 92,
+          "cityId": 6,
+          "name": "Elnady St.",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 93,
+          "cityId": 6,
+          "name": "Mdkhl El-Mohafza",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 94,
+          "cityId": 6,
+          "name": "El-Sharei El-Gdeed",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        },
+        {
+          "areaId": 95,
+          "cityId": 6,
+          "name": "Other",
+          "createDate": "2022-06-28T11:35:07.306+00:00",
+          "updateDate": null
+        }
+      ],
+      "createDate": "2022-06-28T11:35:07.303+00:00",
+      "updateDate": null
+    }
+  ]
+}

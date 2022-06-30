@@ -1,0 +1,114 @@
+<!-- Content -->
+<!-- Category Boxes -->
+<div class="section margin-top-65">
+<div class="container">
+    <div class="row">
+    <div class="col-xl-12">
+        <div class="section-headline centered margin-bottom-15">
+        <h3>Popular Job Categories</h3>
+        </div>
+
+        <!-- Category Boxes Container -->
+        <div class="categories-container">
+        <!-- Category Box -->
+        <app-category-item *ngFor="let categoryItem of categoryItems" [categoryItem]="categoryItem"></app-category-item>
+        
+        <a routerLink="/search" class="category-box">
+            <div class="category-box-icon">
+            <i class="icon-line-awesome-file-code-o"></i>
+            </div>
+            <div class="category-box-counter">612</div>
+            <div class="category-box-content">
+            <h3>Web & Software Dev</h3>
+            </div>
+        </a>
+
+        <!-- Category Box -->
+        <a
+        routerLink="/search"
+            class="category-box"
+        >
+            <div class="category-box-icon">
+            <i class="icon-line-awesome-cloud-upload"></i>
+            </div>
+            <div class="category-box-counter">113</div>
+            <div class="category-box-content">
+            <h3>Data Science & Analitycs</h3>
+            </div>
+        </a>
+
+        <!-- Category Box -->
+        <a
+        routerLink="/search"
+            class="category-box"
+        >
+            <div class="category-box-icon">
+            <i class="icon-line-awesome-suitcase"></i>
+            </div>
+            <div class="category-box-counter">186</div>
+            <div class="category-box-content">
+            <h3>Accounting & Consulting</h3>
+            </div>
+        </a>
+
+        <!-- Category Box -->
+        <a  routerLink="/search" class="category-box">
+            <div class="category-box-icon">
+            <i class="icon-line-awesome-pencil"></i>
+            </div>
+            <div class="category-box-counter">298</div>
+            <div class="category-box-content">
+            <h3>Writing & Translations</h3>
+            </div>
+        </a>
+
+        <!-- Category Box -->
+        <a  routerLink="/search" class="category-box">
+            <div class="category-box-icon">
+            <i class="icon-line-awesome-pie-chart"></i>
+            </div>
+            <div class="category-box-counter">549</div>
+            <div class="category-box-content">
+            <h3>Sales & Marketing</h3>
+            </div>
+        </a>
+
+        <!-- Category Box -->
+        <a  routerLink="/search" class="category-box">
+            <div class="category-box-icon">
+            <i class="icon-line-awesome-image"></i>
+            </div>
+            <div class="category-box-counter">873</div>
+            <div class="category-box-content">
+            <h3>Graphics & Design</h3>
+            </div>
+        </a>
+
+        <!-- Category Box -->
+        <a  routerLink="/search" class="category-box">
+            <div class="category-box-icon">
+            <i class="icon-line-awesome-bullhorn"></i>
+            </div>
+            <div class="category-box-counter">125</div>
+            <div class="category-box-content">
+            <h3>Digital Marketing</h3>
+            </div>
+        </a>
+
+        <!-- Category Box -->
+        <a routerLink="/search" class="category-box">
+            <div class="category-box-icon">
+            <i class="icon-line-awesome-graduation-cap"></i>
+            </div>
+            <div class="category-box-counter">445</div>
+            <div class="category-box-content">
+            <h3>Education & Training</h3>
+            </div>
+        </a>
+
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<!-- Category Boxes / End -->

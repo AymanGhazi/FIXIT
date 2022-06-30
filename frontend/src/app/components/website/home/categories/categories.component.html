@@ -1,0 +1,23 @@
+<!-- Content -->
+<!-- Category Boxes -->
+<div class="section margin-top-65">
+<div class="container">
+    <div class="row">
+    <div class="col-xl-12">
+        <div class="section-headline centered margin-bottom-15">
+        <h3>Popular Job Categories</h3>
+        </div>
+
+        <!-- Category Boxes Container -->
+        <div class="categories-container">
+        <!-- Category Box -->
+            <app-category-item 
+                *ngFor="let categoryItem of categoryItems" 
+                [categoryItem]="categoryItem">
+            </app-category-item>        
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+<!-- Category Boxes / End -->

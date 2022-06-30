@@ -1,0 +1,382 @@
+<!-- Wrapper -->
+<div id="wrapper">
+  <!-- Header Container -->
+  <header id="header-container" class="fullwidth dashboard-header not-sticky">
+    <app-navbar></app-navbar>
+  </header>
+  <div class="clearfix"></div>
+  <!-- Header Container / End -->
+
+  <!-- Dashboard Container -->
+  <div class="dashboard-container">
+    <!-- Dashboard Sidebar -->
+    <div class="dashboard-sidebar">
+      <app-dashboard-sidebar></app-dashboard-sidebar>
+    </div>
+    <!-- Dashboard Sidebar / End -->
+
+    <!-- Dashboard Content
+  ================================================== -->
+    <div class="dashboard-content-container" data-simplebar>
+      <div class="dashboard-content-inner">
+        <!-- Dashboard Headline -->
+        <div class="dashboard-headline">
+          <h3>Settings</h3>
+
+          <!-- Breadcrumbs -->
+          <nav id="breadcrumbs" class="dark">
+            <ul>
+              <li><a routerLink="/">Home</a></li>
+              <li><a routerLink="/dashboard">Dashboard</a></li>
+              <li>Settings</li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Row -->
+        <div class="row">
+          <form
+            #userInfoForm="ngForm"
+            (ngSubmit)="
+              changePasswordForm.valid && userInfoForm.valid && editProfile()
+            "
+          >
+            <!-- Dashboard Box -->
+            <div class="col-xl-12">
+              <div class="dashboard-box margin-top-0">
+                <!-- Headline -->
+                <div class="headline">
+                  <h3>
+                    <i class="icon-material-outline-account-circle"></i>
+                    Account Information
+                  </h3>
+                </div>
+
+                <div class="content with-padding padding-bottom-0">
+                  <div class="row">
+                    <div class="col-auto">
+                      <div
+                        (click)="openAvatarSelect()"
+                        class="avatar-wrapper"
+                        data-tippy-placement="bottom"
+                        title="Change Avatar"
+                      >
+                        <h4>Select Avatar</h4>
+                        <img
+                          class="profile-pic profilePhoto"
+                          [src]="
+                            selectedAvatar ||
+                            'assets/images/user-avatar-placeholder.png'
+                          "
+                          alt=""
+                        />
+                        <div for="profilePhoto" class="upload-button"></div>
+                        <input
+                          class="file-upload form-control-file"
+                          id="profilePhoto"
+                          type="file"
+                          accept="image/*"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col">
+                      <div class="row">
+                        <div class="col-xl-6">
+                          <div class="submit-field">
+                            <h5>name</h5>
+                            <input
+                              name="name"
+                              [(ngModel)]="userInfo.name"
+                              type="text"
+                              class="with-border"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-xl-6">
+                          <div class="submit-field">
+                            <h5>Email</h5>
+                            <input
+                              name="email"
+                              [(ngModel)]="userInfo.mobile"
+                              type="text"
+                              class="with-border"
+                              value="01287455487"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-xl-6">
+                          <div class="submit-field">
+                            <h5>City</h5>
+                            <select
+                              (change)="getareasOfCity($event.target)"
+                              name="city"
+                              [(ngModel)]="userInfo.cityId"
+                              class=""
+                              data-size="7"
+                              data-live-search="true"
+                            >
+                              <option value="0">All</option>
+                              <option
+                                *ngFor="let city of cityOptions"
+                                [value]="city.cityId"
+                              >
+                                {{ city.name }}
+                              </option>
+                            </select>
+                          </div>
+
+                          <div class="submit-field">
+                            <h5>Categories</h5>
+                            <select
+                              name="category"
+                              [(ngModel)]="userInfo.categoryId"
+                              class=""
+                              data-size="7"
+                              title="Select Category"
+                              data-live-search="true"
+                            >
+                              <option value="0">All</option>
+                              <option
+                                *ngFor="let category of categoryOptions"
+                                value="{{ category.id }}"
+                              >
+                                {{ category.name }}
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-xl-6">
+                          <div class="submit-field">
+                            <h5>Area</h5>
+                            <select
+                              name="area"
+                              [(ngModel)]="userInfo.areaId"
+                              class=""
+                              data-size="7"
+                              title="Select Area"
+                              data-live-search="true"
+                            >
+                              <option value="0">Please select a city</option>
+                              <option
+                                value="New Cairo"
+                                *ngFor="let area of areaOptions"
+                                value="{{ area.areaId }}"
+                              >
+                                {{ area.name }}
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dashboard Box -->
+            <div class="col-xl-12">
+              <div class="dashboard-box">
+                <!-- Headline -->
+                <div class="headline">
+                  <h3><i class="icon-material-outline-face"></i> My Info</h3>
+                </div>
+                <!-- My Info -->
+                <div class="content">
+                  <ul class="fields-ul">
+                    <li>
+                      <div class="row">
+                        <div class="col-xl-12">
+                          <div class="submit-field">
+                            <h5>
+                              Phone Numbers
+                              <i
+                                class="help-icon"
+                                data-tippy-placement="right"
+                                title="Additional Phone Numbers"
+                              ></i>
+                              <span>(Optional)</span>
+                            </h5>
+
+                            <!-- Additional Phone Numbers -->
+                            <div class="keywords-container">
+                              <div class="keyword-input-container">
+                                <input
+                                  #Phoneinput
+                                  type="text"
+                                  class="keyword-input with-border"
+                                  placeholder="Aditional Phone Numbers"
+                                />
+                                <button
+                                  (click)="addPhone(Phoneinput.value)"
+                                  class="keyword-input-button ripple-effect"
+                                >
+                                  <i class="icon-material-outline-add"></i>
+                                </button>
+                              </div>
+                              <div class="keywords-list">
+                                <span
+                                  class="keyword"
+                                  *ngFor="let number of userInfo.mobiles"
+                                  ><span
+                                    (click)="removeNumber(number.mobile)"
+                                    class="keyword-remove"
+                                  ></span
+                                  ><span class="keyword-text">{{
+                                    number.mobile
+                                  }}</span></span
+                                >
+                              </div>
+                              <div class="clearfix"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-xl-12">
+                          <div class="submit-field">
+                            <h5>Introduce Yourself</h5>
+                            <textarea
+                              cols="30"
+                              rows="5"
+                              name="introduction"
+                              [(ngModel)]="userInfo.introduction"
+                              class="with-border"
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Gallary Settings -->
+            <!--     <div class="col-xl-12">
+              <div id="test1" class="dashboard-box">
+                <div class="headline">
+                  <h3>
+                    <i class="icon-material-outline-add-photo-alternate"></i>
+                    Photos And Gallaries
+                  </h3>
+                </div>
+                <div class="content with-padding">
+                   gallaries 
+
+                  <div class="gallery_container-all">
+                    <div
+                      class="gallery_container"
+                      *ngFor="let gallary of galleries"
+                      (click)="openGallary(gallary.albumId)"
+                    >
+                      <img
+                        [src]="gallary.photos[0].url"
+                        alt="Image description goes here"
+                      />
+                      <span class="gallery_title">userName</span>
+                      <span class="gallery_text">{{ gallary.title }}</span>
+                    </div>
+                  </div>
+                   endGallaries 
+                  <div class="uploadPhoto">
+                    <div class="d-flex justify-content-end">
+                      <button
+                        (click)="showNNewModal()"
+                        class="btn button ripple-effect big margin-top-30 uploadButton"
+                      >
+                        Create Album
+                      </button>
+                    </div>
+                  </div>
+                </div> 
+                 
+              </div>
+            </div> -->
+            <!-- endOfGallary -->
+
+            <!-- Dashboard Box -->
+            <div class="col-xl-12">
+              <form [formGroup]="changePasswordForm">
+                <div id="test1" class="dashboard-box">
+                  <!-- Headline -->
+                  <div class="headline">
+                    <h3>
+                      <i class="icon-material-outline-lock"></i> Password &
+                      Security
+                    </h3>
+                  </div>
+
+                  <div class="content with-padding">
+                    <div class="row">
+                      <div class="col-xl-4">
+                        <div class="submit-field">
+                          <h5>Current Password</h5>
+                          <app-inputs
+                            type="password"
+                            [control]="currentpassword"
+                            [marginleft]="marginleft"
+                            class="with-border input-pass"
+                          >
+                          </app-inputs>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4">
+                        <div class="submit-field">
+                          <h5>New Password</h5>
+                          <app-inputs
+                            type="password"
+                            [control]="newPassword"
+                            class="with-border"
+                            [marginleft]="marginleft"
+                          >
+                          </app-inputs>
+                        </div>
+                      </div>
+
+                      <div class="col-xl-4">
+                        <div class="submit-field">
+                          <h5>Repeat New Password</h5>
+                          <app-inputs
+                            [type]="'password'"
+                            [control]="confirmPassword"
+                            class="with-border"
+                            [marginleft]="marginleft"
+                          >
+                          </app-inputs>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- Button -->
+            <div class="col-xl-12">
+              <button
+                [disabled]="changePasswordForm.invalid"
+                type="submit"
+                class="btn button ripple-effect big margin-top-30"
+              >
+                Update Profile
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- Row / End -->
+
+        <app-dashboard-footer></app-dashboard-footer>
+      </div>
+    </div>
+    <!-- Dashboard Content / End -->
+  </div>
+  <!-- Dashboard Container / End -->
+</div>
+<!-- Wrapper / End -->

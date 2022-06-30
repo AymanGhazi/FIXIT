@@ -1,0 +1,52 @@
+<div class="freelancer">
+  <!-- Overview -->
+  <div class="freelancer-overview">
+    <div class="freelancer-overview-inner">
+      <!-- Bookmark Icon -->
+      <span
+        class="bookmark-icon"
+        [ngClass]="{
+          bookmarked: technicianItem.bookmarked == 1,
+          hidden: technicianItem.bookmarked == -1
+        }"
+      ></span>
+
+      <!-- Avatar -->
+      <div class="freelancer-avatar">
+        <div class="verified-badge"></div>
+        <a routerLink="/profile/{{ technicianItem.id }}"
+          ><img src="assets/images/user-avatar-big-01.jpg" alt=""
+        /></a>
+      </div>
+
+      <!-- Name -->
+      <div class="freelancer-name">
+        <h4>
+          <a routerLink="/profile/{{ technicianItem.id }}">{{
+            technicianItem.name
+          }}</a>
+        </h4>
+        <p>
+          {{ technicianItem.about }}
+        </p>
+      </div>
+
+      <!-- Rating -->
+      <app-rating [ratingItem]="technicianItem.rating"></app-rating>
+    </div>
+  </div>
+
+  <!-- Details -->
+  <div class="freelancer-details">
+    <div class="freelancer-details-list">
+      <ul>
+        <li>
+          <strong>
+            <i class="icon-material-outline-location-on"></i>
+            {{ technicianItem.city }} - {{ technicianItem.area }}
+          </strong>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

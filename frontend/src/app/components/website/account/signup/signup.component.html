@@ -1,0 +1,204 @@
+<!-- Wrapper -->
+<div id="wrapper">
+  <!-- Header Container -->
+  <header id="header-container" class="fullwidth">
+    <app-navbar></app-navbar>
+  </header>
+  <div class="clearfix"></div>
+  <!-- Header Container / End -->
+
+  <!-- Titlebar
+    ================================================== -->
+  <div id="titlebar" class="gradient">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Register</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Content
+    ================================================== -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-5 offset-xl-3">
+        <div class="login-register-page">
+          <!-- Welcome Text -->
+          <div class="welcome-text">
+            <h3 style="font-size: 26px">Let's create your account!</h3>
+            <span
+              >Already have an account?
+              <a routerLink="/signin">Log In!</a></span
+            >
+          </div>
+          <form
+            [formGroup]="registerForm"
+            (ngSubmit)="registerForm.valid && register()"
+          >
+            <!-- Account Type -->
+            <div class="account-type">
+              <div>
+                <input
+                  [checked]="true"
+                  (change)="onItemChange($event)"
+                  [formControl]="type"
+                  type="radio"
+                  name="account-type-radio"
+                  id="freelancer-radio"
+                  class="account-type-radio"
+                  value="Customer"
+                />
+                <label for="freelancer-radio" class="ripple-effect-dark"
+                  ><i class="icon-material-outline-account-circle"></i>
+                  Customer</label
+                >
+              </div>
+
+              <div>
+                <input
+                  (change)="onItemChange($event)"
+                  [formControl]="type"
+                  type="radio"
+                  name="account-type-radio"
+                  id="employer-radio"
+                  class="account-type-radio"
+                  value="Technician"
+                />
+                <label for="employer-radio" class="ripple-effect-dark"
+                  ><i class="icon-material-outline-business-center"></i>
+                  Technician</label
+                >
+              </div>
+            </div>
+
+            <!-- Form -->
+
+            <div class="input-with-icon-left">
+              <i class="icon-material-outline-textsms"></i>
+
+              <app-inputs
+                [control]="phone"
+                [prefix]="'+02 '"
+                [format]="'000 - 000 - 000 - 99'"
+                type="text"
+                class="input-text with-border"
+                name="Phone register"
+                id="Phone-register"
+                placeholder="Phone Number"
+              >
+              </app-inputs>
+            </div>
+
+            <div class="input-with-icon-left validate row">
+              <input
+                [disabled]="validate"
+                type="text"
+                class="input-text with-border validationinput col-5 col align-self-start"
+                name="validation register"
+                id="validation-register"
+                placeholder=" Enter validation Key"
+              />
+
+              <input
+                *ngIf="validate"
+                type="button"
+                class="button validateButton col-2 col align-self-end"
+                (click)="sendKey()"
+                value="Validate"
+              />
+              <input
+                *ngIf="!validate"
+                type="button"
+                class="button validateButton col-2 col align-self-end"
+                value="submit"
+              />
+              <input
+                type="button"
+                class="btn button validateButton col-2 col align-self-end"
+                value="Resend"
+                [disabled]="!Isresend"
+              />
+              <div class="col-2 col align-self-end timer">{{ display }}</div>
+            </div>
+
+            <div
+              class="input-with-icon-left"
+              title="Should be at least 8 characters long"
+              data-tippy-placement="bottom"
+            >
+              <i class="icon-material-outline-lock"></i>
+
+              <app-inputs
+                [control]="password"
+                type="password"
+                class="input-text with-border"
+                name="password register"
+                id="password-register"
+                placeholder="password"
+              >
+              </app-inputs>
+            </div>
+
+            <div class="input-with-icon-left">
+              <i class="icon-material-outline-lock"></i>
+              <app-inputs
+                [control]="confirmPassword"
+                type="password"
+                class="input-text with-border"
+                name="emailaddress register"
+                id="emailaddress-register"
+                placeholder="Repeat Password"
+              >
+              </app-inputs>
+            </div>
+            <div class="input-with-icon-left" *ngIf="isTechnician">
+              <i class="icon-material-outline-assignment"></i>
+              <select
+                class="default"
+                title="All Categories"
+                [formControl]="categoryId"
+                placeholder="Please enter category"
+              >
+                <option value="-1">Please select a Job category</option>
+
+                <option
+                  *ngFor="let category of categories"
+                  [value]="category.id"
+                >
+                  {{ category.name }}
+                </option>
+              </select>
+              <ng-container *ngIf="categoryId.touched && categoryId.dirty">
+                <p *ngIf="categoryId.value == -1" style="color: red">
+                  Field is required
+                </p>
+              </ng-container>
+            </div>
+
+            <!-- Button -->
+            <button
+              class="btn button full-width button-sliding-icon ripple-effect margin-top-10 registerButton"
+              type="submit"
+              form="login-form"
+              (click)="register()"
+              [disabled]="registerForm.invalid"
+              [ngClass]="{ 'button-sliding-icon': !registerForm.valid }"
+            >
+              Register <i class="icon-material-outline-arrow-right-alt"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Spacer -->
+  <div class="margin-top-70"></div>
+  <!-- Spacer / End-->
+
+  <app-footer></app-footer>
+</div>
+
+<!-- Wrapper / End -->

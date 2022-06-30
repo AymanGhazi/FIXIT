@@ -1,0 +1,9 @@
+#screen-dimmer {
+  position: fixed;
+  z-index: 2000;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block !important;
+}
+/*# sourceMappingURL=app.component.css.map */

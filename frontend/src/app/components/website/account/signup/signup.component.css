@@ -1,0 +1,53 @@
+select {
+  margin-left: 44px;
+}
+
+.validate {
+  text-align: end;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.validate .validateButton {
+  padding: 0px;
+}
+
+.validate .validationinput {
+  margin-left: 13px;
+}
+
+.registerButton {
+  max-width: 199%;
+  width: 110%;
+}
+
+.btn:hover {
+  color: #e9ecf0;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.timer {
+  bottom: 28px;
+}
+
+input[type="text"]:disabled {
+  background: #dddddd;
+}
+/*# sourceMappingURL=signup.component.css.map */

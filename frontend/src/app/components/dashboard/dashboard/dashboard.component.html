@@ -1,0 +1,163 @@
+<!-- Wrapper -->
+<div id="wrapper">
+  <!-- Header Container -->
+  <header id="header-container" class="fullwidth dashboard-header not-sticky">
+    <app-navbar></app-navbar>
+  </header>
+  <div class="clearfix"></div>
+  <!-- Header Container / End -->
+
+  <!-- Dashboard Container -->
+  <div class="dashboard-container">
+    <!-- Dashboard Sidebar -->
+    <div class="dashboard-sidebar">
+      <app-dashboard-sidebar></app-dashboard-sidebar>
+    </div>
+    <!-- Dashboard Sidebar / End -->
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-content-container" data-simplebar>
+      <div class="dashboard-content-inner">
+        <!-- Dashboard Headline -->
+        <div class="dashboard-headline">
+          <h3>Howdy, Tom!</h3>
+          <span>We are glad to see you again!</span>
+
+          <!-- Breadcrumbs -->
+          <nav id="breadcrumbs" class="dark">
+            <ul>
+              <li><a routerLink="/">Home</a></li>
+              <li>Dashboard</li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Fun Facts Container -->
+        <div class="fun-facts-container">
+          <div class="fun-fact">
+            <div class="fun-fact-text">
+              <span>Messages</span>
+              <h4>{{ dashboardInfo.totalMessages }}</h4>
+            </div>
+            <div
+              class="fun-fact-icon"
+              style="background-color: rgba(54, 189, 120, 0.07)"
+            >
+              <i class="icon-material-outline-gavel" style="color: #36bd78"></i>
+            </div>
+          </div>
+          <div class="fun-fact" data-fun-fact-color="#b81b7f">
+            <div class="fun-fact-text">
+              <span>Reviews</span>
+              <h4>{{ dashboardInfo.totalReviews }}</h4>
+            </div>
+            <div
+              class="fun-fact-icon"
+              style="background-color: rgba(184, 27, 127, 0.07)"
+            >
+              <i
+                class="icon-material-outline-business-center"
+                style="color: #b81b7f"
+              ></i>
+            </div>
+          </div>
+          <div class="fun-fact" data-fun-fact-color="#efa80f">
+            <div class="fun-fact-text">
+              <span>Bookmarked</span>
+              <h4>{{ dashboardInfo.totalBookmarks }}</h4>
+            </div>
+            <div
+              class="fun-fact-icon"
+              style="background-color: rgba(239, 168, 15, 0.07)"
+            >
+              <i
+                class="icon-material-outline-rate-review"
+                style="color: #efa80f"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row -->
+        <div class="row">
+          <!-- Dashboard Box -->
+          <div class="col-xl-6">
+            <div class="dashboard-box">
+              <div class="headline">
+                <h3>
+                  <i class="icon-material-baseline-notifications-none"></i>
+                  Notifications
+                </h3>
+              </div>
+              <div class="content">
+                <ul class="dashboard-box-list">
+                  <li *ngFor="let notificationItem of notifications">
+                    <span class="notification-icon"
+                      ><i class="icon-feather-bell"></i
+                    ></span>
+                    <span class="notification-text">
+                      {{ notificationItem.notificationContent }}
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Pagination -->
+            <div class="clearfix"></div>
+            <app-pagination
+              [pagination]="{ totalItems: dashboardInfo.totalReviews }"
+            ></app-pagination>
+          </div>
+
+          <!-- Dashboard Box -->
+          <div class="col-xl-6">
+            <div class="dashboard-box">
+              <!-- Headline -->
+              <div class="headline">
+                <h3><i class="icon-material-outline-business"></i> Reviews</h3>
+              </div>
+
+              <div class="content">
+                <ul class="dashboard-box-list">
+                  <li *ngFor="let reviewItem of reviews">
+                    <div class="boxed-list-item">
+                      <!-- Content -->
+                      <div class="item-content">
+                        <h4>{{ reviewItem.accountName }}</h4>
+
+                        <div class="item-details margin-top-10">
+                          <div class="detail-item">
+                            <i class="icon-material-outline-date-range"></i>
+                            {{ reviewItem.createDate | timeago }}
+                          </div>
+                        </div>
+                        <div class="item-description">
+                          <p>
+                            {{ reviewItem.reviewText }}
+                          </p>
+                        </div>
+                        <app-rating [ratingItem]="reviewItem.rate">
+                        </app-rating>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="clearfix"></div>
+            <app-pagination></app-pagination>
+            <!-- [pagination]="{ totalItems: dashboardInfo.reviews.itemsCount }" -->
+          </div>
+        </div>
+
+        <app-dashboard-footer></app-dashboard-footer>
+      </div>
+      <!-- Row / End -->
+    </div>
+  </div>
+  <!-- Dashboard Content / End -->
+</div>
+<!-- Dashboard Container / End -->
+<!-- Wrapper / End -->

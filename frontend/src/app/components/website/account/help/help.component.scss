@@ -1,0 +1,36 @@
+
+
+.validate {
+    text-align: end;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+
+}
+.validate .validateButton{
+    padding: 0px;
+}
+.validate .validationinput{
+    margin-left: 13px;
+}
+.registerButton{
+   max-width: 199%;
+    width: 110%;
+}
+.btn:hover {
+    color: #e9ecf0;
+}
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+   
+}
+.timer{
+    bottom: 28px;
+}
+
+input[type="text"]:disabled {
+  background: #dddddd;
+}
